@@ -1,4 +1,7 @@
-@font-face { font-family: Delicious; src: url('../font/PlusJakartaSans-Italic.ttf'); } 
+@font-face {
+    font-family: Delicious;
+    src: url('../font/PlusJakartaSans-Italic.ttf');
+}
 
 body {
     margin: 0;
@@ -17,21 +20,28 @@ body {
     width: 400px;
     margin: 50px auto;
     padding: 20px;
-    background:linear-gradient(to bottom, #060246, #1a52fd);;
+    background: linear-gradient(to bottom, #060246, #1a52fd);
+    ;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 2);
     text-align: center;
+    font-family: Delicious;
+
 }
 
 .check-container {
     width: 400px;
     margin: 50px auto;
     padding: 20px;
-    background:linear-gradient(to bottom, #060246, #1a52fd);;
+    background: linear-gradient(to bottom, #060246, #1a52fd);
+    ;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 2);
     text-align: center;
-    color:white
+    color: white ;
+    font-family: Delicious;
+
+
 }
 
 h2 {
@@ -50,7 +60,8 @@ label {
     margin-top: 10px;
 }
 
-input, select {
+input,
+select {
     color: black;
     width: 100%;
     padding: 8px;
@@ -64,7 +75,7 @@ button {
     padding: 10px;
     background: #007bff;
     color: white;
-    border: none;
+    border: 10px;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -74,17 +85,19 @@ button:hover {
 }
 
 body {
-    background-image: linear-gradient(to bottom, #000000, #1a52fd); /* Chuyển từ màu A -> B */
-    background-attachment: fixed; /* Giữ cố định khi cuộn */
+    background-image: linear-gradient(to bottom, #000000, #1a52fd);
+    /* Chuyển từ màu A -> B */
+    background-attachment: fixed;
+    /* Giữ cố định khi cuộn */
     background-size: cover;
-  }
-  body {
+}
+
+body {
     color: white !important;
-  font-family: Delicious;
 
-  }
+}
 
-  .custom-dropdown {
+.custom-dropdown {
     position: relative;
     width: 100%;
 }
@@ -110,6 +123,7 @@ body {
     width: 100%;
     display: none;
     z-index: 10;
+
 }
 
 .dropdown-item {
@@ -118,6 +132,7 @@ body {
     align-items: center;
     cursor: pointer;
     color: black;
+
 }
 
 .dropdown-item:hover {
@@ -132,4 +147,9 @@ body {
 
 .show {
     display: block;
+}
+
+footer {
+    font-family: Delicious;
+ 
 }
