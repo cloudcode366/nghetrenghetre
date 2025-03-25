@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
         };
 
         try {
-            const response = await fetch("http://localhost:8081/api/v1/user/create_user", {
+            const response = await fetch("http://120.72.85.88:8080/api/v1/user/create_user", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(paymentData)

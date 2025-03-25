@@ -123,13 +123,13 @@ body {
     width: 100%;
     display: none;
     z-index: 10;
-
+    color: black;
 }
 
 .dropdown-item {
-    padding: 10px;
-    display: flex;
-    align-items: center;
+    /* padding: 10px; */
+    /* display: flex; */
+    /* align-items: center; */
     cursor: pointer;
     color: black;
 
