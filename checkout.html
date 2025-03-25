@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra đơn hàng</title>
+    <link rel="stylesheet" href="./css/stylePay.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <nav>
+            <h6 class="mb-0">
+                <img src="./LOGO TYPO.png" height="80" alt="Logo">
+            </h6>
+        </nav>
+    </div>
+</header>
+
+<main class="check-container">
+    <h2>Nhập mã đơn hàng</h2>
+    <form id="check-form">
+        <label for="orderCode">Mã đơn hàng:</label>
+        <input type="text" id="orderCode" name="orderCode" required>
+        </select>
+
+
+        <button type="submit" name="check-btn">Kiểm tra</button>
+    </form>
+    <h3  id="status" style="color:white"></h3>
+</main>
+
+<script src="./js/checkout.js"></script>
+</body>
+</html>

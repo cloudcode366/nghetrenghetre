@@ -1,0 +1,135 @@
+@font-face { font-family: Delicious; src: url('../font/PlusJakartaSans-Italic.ttf'); } 
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Header */
+.header-container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Form */
+.payment-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background:linear-gradient(to bottom, #060246, #1a52fd);;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 2);
+    text-align: center;
+}
+
+.check-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background:linear-gradient(to bottom, #060246, #1a52fd);;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 2);
+    text-align: center;
+    color:white
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, select {
+    color: black;
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #000000, #1a52fd); /* Chuyển từ màu A -> B */
+    background-attachment: fixed; /* Giữ cố định khi cuộn */
+    background-size: cover;
+  }
+  body {
+    color: white !important;
+  font-family: Delicious;
+
+  }
+
+  .custom-dropdown {
+    position: relative;
+    width: 100%;
+}
+
+#bank-search {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.dropdown-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-height: 250px;
+    overflow-y: auto;
+    background: white;
+    position: absolute;
+    width: 100%;
+    display: none;
+    z-index: 10;
+}
+
+.dropdown-item {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: black;
+}
+
+.dropdown-item:hover {
+    background: #f0f0f0;
+}
+
+.bank-logo {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.show {
+    display: block;
+}

@@ -1,0 +1,27 @@
+@font-face { font-family: Delicious; src: url('../font/PlusJakartaSans-Italic.ttf'); } 
+.icon-hover:hover {
+  border-color: #3b71ca !important;
+  background-color: white !important;
+  color: #3b71ca !important;
+}
+
+.icon-hover:hover i {
+  color: #3b71ca !important;
+}
+body {
+  background-image: linear-gradient(to bottom, #000000, #1a52fd); /* Chuyển từ màu A -> B */
+  background-attachment: fixed; /* Giữ cố định khi cuộn */
+  background-size: cover;
+}
+body {
+  color: white !important;
+  font-family: Delicious;
+}
+input {
+  width: 50px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid #6c757d;
+  margin: 5px;
+}

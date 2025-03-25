@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header */
+.header-container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Confirm Box */
+.confirm-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background:linear-gradient(to bottom, #060246, #1a52fd);;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 2);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+#payment-info p {
+    text-align: left;
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
+}
+body {
+    background-image: linear-gradient(to bottom, #000000, #1a52fd); /* Chuyển từ màu A -> B */
+    background-attachment: fixed; /* Giữ cố định khi cuộn */
+    background-size: cover;
+  }
+  body {
+    color: white !important;
+  }
