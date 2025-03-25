@@ -19,7 +19,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Lưu số lượng vé vào localStorage khi nhấn Buy now
     buyNowBtn.addEventListener("click", function () {
-        const ticketQuantity = parseInt(inputField.value) || 0;
+        if (inputField.value === "0") {
+            alert("Please choose the number of tickets!");
+            return;
+        }
+        const ticketQuantity = inputField.value;
         localStorage.setItem("ticketQuantity", ticketQuantity);
     });
 });
