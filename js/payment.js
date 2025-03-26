@@ -100,7 +100,6 @@ document.addEventListener("DOMContentLoaded", function () {
         try {
             
             const response = await fetch("/api/proxy/api/v1/user/create_user", {
-                agent,
                 method: "POST",
                 mode: "cors",
                 headers: { "Content-Type": "application/json" },
