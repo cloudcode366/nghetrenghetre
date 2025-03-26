@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", async function () {
     await loadBankList(); // Tải danh sách ngân hàng khi trang load
 });
@@ -10,6 +11,7 @@ async function loadBankList() {
     if (!bankSearch || !bankList) return;
 
     try {
+        
         const response = await fetch("https://api.vietqr.io/v2/banks");
         const result = await response.json();
         let banks = result.data || []; // Lưu danh sách ngân hàng
@@ -96,23 +98,29 @@ document.addEventListener("DOMContentLoaded", function () {
         };
 
         try {
-            const response = await fetch("http://120.72.85.88:8080/api/v1/user/create_user", {
+            const https = require("https");
+            const agent = new https.Agent({
+                rejectUnauthorized: false
+            })
+            const response = await fetch("/api/proxy/api/v1/user/create_user", {
+                agent,
                 method: "POST",
+                mode: "cors",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(paymentData)
             });
-        
+
             if (!response.ok) {
                 throw new Error(`Lỗi API: ${response.status} - ${response.statusText}`);
             }
-        
+
             const userId = await response.text(); // Lấy dữ liệu trả về dưới dạng chuỗi
             console.log("User ID từ API:", userId);
-        
+
             if (userId) {
                 localStorage.setItem("userId", userId.trim()); // Lưu vào localStorage
                 console.log("User ID đã lưu:", userId.trim());
-        
+
                 window.location.href = "./confirm.html"; // Chuyển hướng đến trang xác nhận
             } else {
                 alert("Không nhận được userId. Vui lòng thử lại.");
@@ -121,6 +129,6 @@ document.addEventListener("DOMContentLoaded", function () {
             console.error("Lỗi khi gọi API:", error);
             alert("Lỗi kết nối đến server. Vui lòng thử lại!");
         }
-        
+
     });
 });

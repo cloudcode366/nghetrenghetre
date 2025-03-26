@@ -11,7 +11,7 @@ document.getElementById("check-form").addEventListener("submit", async function(
     }
 
     try {
-        const response = await fetch(`http://120.72.85.88:8080/api/v1/user/check/${orderCode}`);
+        const response = await fetch(`/api/proxy/api/v1/user/check/${orderCode}`);
         if (!response.ok) {
             throw new Error("Không tìm thấy đơn hàng hoặc có lỗi xảy ra!");
         }

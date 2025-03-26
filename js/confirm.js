@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Gọi API để lấy thông tin người dùng
-    fetch(`http://120.72.85.88:8080/api/v1/user/get_user/${userId}`)
+    fetch(`/api/proxy/api/v1/user/get_user/${userId}`)
         .then(response => {
             if (!response.ok) throw new Error("Lỗi khi lấy dữ liệu người dùng");
             return response.json();
@@ -35,7 +35,7 @@ document.getElementById("confirm-btn").addEventListener("click", async function 
 
     try {
         // Gọi API để lấy URL thanh toán
-        const response = await fetch(`http://120.72.85.88:8080/api/v1/user/get_pay_link/${userId}`, {
+        const response = await fetch(`/api/proxy/api/v1/user/get_pay_link/${userId}`, {
             method: "GET",
         });
 
