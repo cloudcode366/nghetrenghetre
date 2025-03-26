@@ -98,10 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
         };
 
         try {
-            const https = require("https");
-            const agent = new https.Agent({
-                rejectUnauthorized: false
-            })
+            
             const response = await fetch("/api/proxy/api/v1/user/create_user", {
                 agent,
                 method: "POST",
